@@ -21,10 +21,6 @@ class HomeController < ApplicationController
         @city = 'Нема такого міста'
         @temperature = ''
       end
-      # @city = "#{@api_response['location']['name']}"
-      # @temperature = "#{@api_response['current']['temperature']}°"
-
-
     end
   end
 end
