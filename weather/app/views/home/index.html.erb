@@ -1,0 +1,10 @@
+<center>
+<div class="main">
+  <h1 class="weather">Погода</h1>
+  <%= form_with(url: search_path, method: "get", local: true) do %>
+    <%= text_field_tag(:query) %>
+    <%= submit_tag("Пошук",class: "btn btn-primary") %>
+  <% end %>
+  <div class="city"> <h1><%= @city %>  <h5><%= @temperature %></h5></h1> </div>
+</div>
+</center>
